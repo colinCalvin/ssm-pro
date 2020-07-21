@@ -1,4 +1,4 @@
-<%@page contentType="text/html;utf-8" language="java" isELIgnored="false" %>
+<%@page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <html>
 <body>
 <%--访问index.jsp页面会直接跳转到对应页面--%>

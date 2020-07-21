@@ -1,5 +1,6 @@
 package com.domain;
 
+import com.utils.DateUtils;
 import java.util.Date;
 
 /**
@@ -76,6 +77,9 @@ public class Product {
     }
 
     public String getDepartureTimeStr() {
+        if (departureTime != null){
+            departureTimeStr = DateUtils.dateToString(departureTime,"yyyy-MM-dd HH:mm:ss");
+        }
         return departureTimeStr;
     }
 
@@ -108,6 +112,14 @@ public class Product {
     }
 
     public String getProductStatusStr() {
+        if (productStatus != null){
+            //根据数据库查询出的状态值进行对应的状态信息输出
+            if (productStatus == 0){
+                productStatusStr = "关闭";
+            }else {
+                productStatusStr = "开启";
+            }
+        }
         return productStatusStr;
     }
 

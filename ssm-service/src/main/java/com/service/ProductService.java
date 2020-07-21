@@ -1,7 +1,6 @@
 package com.service;
 
 import com.domain.Product;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
