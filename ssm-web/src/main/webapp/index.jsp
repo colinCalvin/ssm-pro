@@ -1,6 +1,8 @@
-<%@page contentType="text/html; UTF-8" language="java" isELIgnored="false" %>
+<%@page contentType="text/html;utf-8" language="java" isELIgnored="false" %>
 <html>
 <body>
-<h2>Hello World!</h2>
+<%--访问index.jsp页面会直接跳转到对应页面--%>
+<%--<jsp:forward page="/pages/main.jsp"></jsp:forward>--%>
+<a href="${pageContext.request.contextPath}/product/findAll">查询所有产品信息</a>
 </body>
 </html>
