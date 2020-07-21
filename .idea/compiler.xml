@@ -7,8 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ssm-domian" />
-        <module name="ssm-utils" />
         <module name="ssm-web" />
+        <module name="ssm-utils" />
         <module name="ssm-dao" />
         <module name="ssm-service" />
       </profile>
