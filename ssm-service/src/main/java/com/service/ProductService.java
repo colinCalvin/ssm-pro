@@ -17,4 +17,12 @@ public interface ProductService {
      * @return java.util.List<com.dao.Product>
      **/
     public List<Product> findAll();
+
+    /**
+     * @Author 长歌哲理
+     * @Description 添加产品
+     * @Param [product]
+     * @return void
+     **/
+    void save(Product product);
 }

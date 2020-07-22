@@ -12,7 +12,6 @@
         <module>ssm-domian</module>
         <module>ssm-dao</module>
         <module>ssm-service</module>
-        <module>ssm-utils</module>
         <module>ssm-web</module>
     </modules>
 
@@ -135,6 +134,13 @@
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
             <version>1.1.0</version>
+        </dependency>
+
+<!--        添加PageHelper插件依赖-->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>5.1.11</version>
         </dependency>
 
     </dependencies>

@@ -1,6 +1,7 @@
 package com.dao;
 
 import com.domain.Product;
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
 
@@ -19,7 +20,16 @@ public interface ProductDao {
      * @Param []
      * @return java.util.List<com.dao.Product>
      **/
-    @Select("select * from product")
+    @Select("SELECT * FROM product")
     public List<Product> findAll();
 
+    /**
+     * @Author 长歌哲理
+     * @Description 添加产品
+     * @Param [product]
+     * @return void
+     * #{productNum} mybatis表达式，一定不能忘记写#{}
+     **/
+    @Insert("insert into product(productNum,productName,cityName,departureTime,productPrice,productDesc,productStatus) values (#{productNum},#{productName},#{cityName},#{departureTime},#{productPrice},#{productDesc},#{productStatus})")
+    void save(Product product);
 }

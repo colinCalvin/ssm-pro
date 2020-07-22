@@ -6,7 +6,7 @@
 <!-- 页面meta -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>数据 - AdminLTE2定制版</title>
+<title>数据</title>
 <meta name="description" content="AdminLTE2定制版">
 <meta name="keywords" content="AdminLTE2定制版">
 
@@ -85,13 +85,13 @@
 				<li><a href="${pageContext.request.contextPath}/index.jsp"><i
 						class="fa fa-dashboard"></i> 首页</a></li>
 				<li><a
-					href="${pageContext.request.contextPath}/product/findAll.do">产品管理</a></li>
+					href="${pageContext.request.contextPath}/product/findAll">产品管理</a></li>
 				<li class="active">产品表单</li>
 			</ol>
 			</section>
 			<!-- 内容头部 /-->
 
-			<form action="${pageContext.request.contextPath}/product/save.do"
+			<form action="${pageContext.request.contextPath}/product/save"
 				method="post">
 				<!-- 正文区域 -->
 				<section class="content"> <!--产品信息-->
