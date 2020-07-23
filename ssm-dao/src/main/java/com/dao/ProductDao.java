@@ -34,7 +34,6 @@ public interface ProductDao {
     void save(Product product);
 
     /**
-     * @Author 长歌哲理
      * @Description 根据id查询韩品信息
      * @Param [id]
      * @return com.domain.Product

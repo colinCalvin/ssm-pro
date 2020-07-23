@@ -16,7 +16,7 @@ public class Product {
     private String productNum;   //编号，唯一
     private String productName;  //名称
     private String cityName;     //出发城市
-//    解决mybatis类型转换问题注解j，字符串会自动转换为Date类型
+//  解决mybatis类型转换问题注解j，字符串会自动转换为Date类型
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
     private Date departureTime;  //出发时间
     private String departureTimeStr;

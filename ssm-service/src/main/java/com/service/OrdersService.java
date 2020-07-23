@@ -17,4 +17,11 @@ public interface OrdersService {
      * @return java.util.List<com.domain.Orders>
      **/
     List<Orders> findAll(int page, int size);
+
+    /**
+     * @Description service层根据订单id查询订单详细信息
+     * @Param [orderId]
+     * @return com.domain.Orders
+     **/
+    Orders findById(String orderId);
 }
