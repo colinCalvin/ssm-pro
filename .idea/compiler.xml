@@ -6,10 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ssm-domian" />
+        <module name="ssm-web" />
         <module name="ssm-dao" />
         <module name="ssm-service" />
-        <module name="ssm-web" />
-        <module name="ssm-domian" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

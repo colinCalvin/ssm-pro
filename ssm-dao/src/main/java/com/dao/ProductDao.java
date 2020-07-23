@@ -32,4 +32,13 @@ public interface ProductDao {
      **/
     @Insert("insert into product(productNum,productName,cityName,departureTime,productPrice,productDesc,productStatus) values (#{productNum},#{productName},#{cityName},#{departureTime},#{productPrice},#{productDesc},#{productStatus})")
     void save(Product product);
+
+    /**
+     * @Author 长歌哲理
+     * @Description 根据id查询韩品信息
+     * @Param [id]
+     * @return com.domain.Product
+     **/
+    @Select("SELECT * FROM product WHERE id = #{id}")
+    public Product findById(String id);
 }
