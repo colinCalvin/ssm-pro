@@ -11,9 +11,11 @@ public class Traveller {
     private String sex; //性别
     private String phoneNum;  //旅客电话
     private Integer credentialsType;  //证件类型
+    private String credentialsTypeStr;
     private String credentialsNum;  //证件号码
     private Integer travellerType;  //旅客类型（成人还是儿童）
     private String travellerTypeStr;
+
 
     @Override
     public String toString() {
@@ -23,11 +25,31 @@ public class Traveller {
                 ", sex='" + sex + '\'' +
                 ", phoneNum='" + phoneNum + '\'' +
                 ", credentialsType=" + credentialsType +
+                ", credentialsTypeStr='" + credentialsTypeStr + '\'' +
                 ", credentialsNum='" + credentialsNum + '\'' +
                 ", travellerType=" + travellerType +
-                ", tracellerTypeStr='" + travellerTypeStr + '\'' +
+                ", travellerTypeStr='" + travellerTypeStr + '\'' +
                 '}';
     }
+
+    public String getCredentialsTypeStr() {
+        //证件类型 0身份证 1护照 2军官证
+        if (credentialsType != null){
+            if (credentialsType == 0){
+                credentialsTypeStr = "身份证";
+            }else if (credentialsType == 1){
+                credentialsTypeStr = "护照";
+            }else if (credentialsType == 2){
+                credentialsTypeStr = "军官证";
+            }
+        }
+        return credentialsTypeStr;
+    }
+
+    public void setCredentialsTypeStr(String credentialsTypeStr) {
+        this.credentialsTypeStr = credentialsTypeStr;
+    }
+
 
     public String getId() {
         return id;
@@ -86,10 +108,20 @@ public class Traveller {
     }
 
     public String getTravellerTypeStr() {
+        //旅客类型 0成人 1儿童
+        if (travellerType != null){
+            if (travellerType == 0){
+                travellerTypeStr = "成人";
+            }else if (travellerType == 1){
+                travellerTypeStr = "儿童";
+            }
+        }
+
         return travellerTypeStr;
     }
 
     public void setTravellerTypeStr(String travellerTypeStr) {
         this.travellerTypeStr = travellerTypeStr;
     }
+
 }
