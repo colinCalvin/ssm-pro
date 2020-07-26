@@ -21,7 +21,7 @@
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
-<!--    测试依赖-->
+    <!--    测试依赖-->
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -29,7 +29,7 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
-<!--        spring aop依赖-->
+        <!--        spring aop依赖-->
         <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjweaver</artifactId>
@@ -37,16 +37,36 @@
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>5.2.7.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
             <artifactId>spring-aop</artifactId>
             <version>5.2.7.RELEASE</version>
         </dependency>
-<!--        spring容器依赖-->
+        <!--        spring容器依赖-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
             <version>5.2.7.RELEASE</version>
         </dependency>
-<!--        spring mvc依赖-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+            <version>5.2.7.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>5.2.7.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>5.2.7.RELEASE</version>
+        </dependency>
+        <!--        spring mvc依赖-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
@@ -57,25 +77,25 @@
             <artifactId>spring-webmvc</artifactId>
             <version>5.2.7.RELEASE</version>
         </dependency>
-<!--        单元测试-->
+        <!--        单元测试-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
             <version>5.2.7.RELEASE</version>
         </dependency>
-<!--        spring事务-->
+        <!--        spring事务-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-tx</artifactId>
             <version>5.2.7.RELEASE</version>
         </dependency>
-<!--        jdbc模板技术依赖-->
+        <!--        jdbc模板技术依赖-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
             <version>5.2.7.RELEASE</version>
         </dependency>
-<!--        mysql数据库驱动-->
+        <!--        mysql数据库驱动-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -93,14 +113,14 @@
             <version>2.0</version>
         </dependency>
 
-<!--        页面el表达式依赖-->
+        <!--        页面el表达式依赖-->
         <dependency>
             <groupId>jstl</groupId>
             <artifactId>jstl</artifactId>
             <version>1.2</version>
         </dependency>
 
-<!--        日志依赖-->
+        <!--        日志依赖-->
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
@@ -108,11 +128,16 @@
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.30</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
             <version>1.7.30</version>
         </dependency>
 
-<!--        mybatis依赖-->
+        <!--        mybatis依赖-->
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
@@ -124,23 +149,51 @@
             <version>2.0.5</version>
         </dependency>
 
-<!--        数据库连接池依赖-->
-<!--        <dependency>-->
-<!--            <groupId>c3p0</groupId>-->
-<!--            <artifactId>c3p0</artifactId>-->
-<!--            <version>0.9.1.2</version>-->
-<!--        </dependency>-->
+        <!--        数据库连接池依赖-->
+        <!--        <dependency>-->
+        <!--            <groupId>c3p0</groupId>-->
+        <!--            <artifactId>c3p0</artifactId>-->
+        <!--            <version>0.9.1.2</version>-->
+        <!--        </dependency>-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
             <version>1.1.0</version>
         </dependency>
 
-<!--        添加PageHelper插件依赖-->
+        <!--        添加PageHelper插件依赖-->
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper</artifactId>
             <version>5.1.11</version>
+        </dependency>
+
+        <!--        导入spring security依赖-->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-core</artifactId>
+            <version>5.3.3.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-taglibs</artifactId>
+            <version>5.3.3.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>5.3.3.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+            <version>5.3.3.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>jsr250-api</artifactId>
+            <version>1.0</version>
         </dependency>
 
     </dependencies>
